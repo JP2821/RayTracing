@@ -8,8 +8,6 @@ from plane import plane
 from piso import piso
 from color_fuctions import colorDenormalize,colorMul,colorNormalize,colorScale,colorSum
 from reflexão_e_refração import reflect,refract
-    
-
 class scene_main:
     def __init__(self):
         
@@ -24,8 +22,8 @@ class scene_main:
     def getBackground_Color(self):
         return self.bg_color
 
-    def addSphere(self, position, radius, color, ka, kd, ks, phongN, kr, kt, refN):
-        self.objs.append(sphere(position, radius, color, ka, kd, ks, phongN, kr, kt, refN))
+    def addSphere(self, position, radius, color, ka, kd, ks, phongN, kr, kt, refN, texture_file):
+        self.objs.append(sphere(position, radius, color, ka, kd, ks, phongN, kr, kt, refN, texture_file))
     
     def addPlane(self, position, normal, color, ka, kd, ks, phongN, kr, kt, refN):
         self.objs.append(plane(position, normal, color, ka, kd, ks, phongN, kr, kt, refN))
@@ -319,8 +317,8 @@ if __name__ == '__main__':
         if obj_select == '*':
             radius = float(inputs[index])
             index +=1
-
-            new_scene.addSphere(position, radius, color, ka, kd, ks, phongN, kr, kt, refN)
+            texture = "texturas/terra.jpg"
+            new_scene.addSphere(position, radius, color, ka, kd, ks, phongN, kr, kt, refN, texture)
         elif obj_select == '/':
             normal_x = float(inputs[index])
             index +=1
