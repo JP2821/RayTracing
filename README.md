@@ -22,11 +22,11 @@ Dentro dessa pasta existem vários arquivos de input com variações de nossas c
 Nos inputs de 4 a 6 variamos a posição das esferas.
 
 ## Explicando como funciona o aquivo de entrada
-primeira linha: contem a dimensão da imagem a maioria dos arquivos é 480 X 640, lembrando que a primeira é y e a segunda x.
-segunda linha: Define o tamanho do pixel e a distância focal da câmera.
-terceira linha: Define a posição da câmera no espaço tridimensional (x, y, z).
-quarta linha: Define a direção para a qual a câmera está apontando (vetor de olhar).
-quinta linha: Define a orientação "para cima" da câmera.
+primeira linha: contem a dimensão da imagem a maioria dos arquivos é 480 X 640, lembrando que a primeira é y e a segunda x.\n
+segunda linha: Define o tamanho do pixel e a distância focal da câmera.\n
+terceira linha: Define a posição da câmera no espaço tridimensional (x, y, z).\n
+quarta linha: Define a direção para a qual a câmera está apontando (vetor de olhar).\n
+quinta linha: Define a orientação "para cima" da câmera.\n
 sexta linha: Define a distância da câmera ao plano de imagem.
 setima linha: Define o número de luzes na cena.
 oitava linha: Define o número de objetos na cena.
