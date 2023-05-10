@@ -22,14 +22,14 @@ class scene_main:
     def getBackground_Color(self):
         return self.bg_color
 
-    def addSphere(self, position, radius, color, ka, kd, ks, phongN, kr, kt, refN, texture_file):
-        self.objs.append(sphere(position, radius, color, ka, kd, ks, phongN, kr, kt, refN, texture_file))
+    def addSphere(self, position, radius, color, ka, kd, ks, phongN, kr, kt, refN):
+        self.objs.append(sphere(position, radius, color, ka, kd, ks, phongN, kr, kt, refN))
     
     def addPlane(self, position, normal, color, ka, kd, ks, phongN, kr, kt, refN):
         self.objs.append(plane(position, normal, color, ka, kd, ks, phongN, kr, kt, refN))
 
-    def addPiso(self, position, normal, color, ka, kd, ks, phongN, kr, kt, refN):
-        self.objs.append(piso(position, normal, color, ka, kd, ks, phongN, kr, kt, refN))
+    def addPiso(self, position, normal, color, ka, kd, ks, phongN, kr, kt, refN, texture_file):
+        self.objs.append(piso(position, normal, color, ka, kd, ks, phongN, kr, kt, refN, texture_file))
 
     def addPointLight(self, position, color):
         self.lights.append(pointLight(position, color))
@@ -99,7 +99,7 @@ def render(res_h, res_v, pxl_size,d,cam_pos,cam_forward,cam_up, scene, max_depth
                 c = (ars[i * 3 + 0][x * res_v + y] ,ars[i * 3 + 1][x * res_v + y] ,ars[i * 3 + 2][x * res_v + y])              
                 img.putpixel((xranges[i] + x, y),c)       
 
-    img.save('test3.png')
+    img.save('test4.png')
     print("imagem salva")
 
 
@@ -317,8 +317,8 @@ if __name__ == '__main__':
         if obj_select == '*':
             radius = float(inputs[index])
             index +=1
-            texture = "texturas/terra.jpg"
-            new_scene.addSphere(position, radius, color, ka, kd, ks, phongN, kr, kt, refN, texture)
+            new_scene.addSphere(position, radius, color, ka, kd, ks, phongN, kr, kt, refN)
+
         elif obj_select == '/':
             normal_x = float(inputs[index])
             index +=1
@@ -331,6 +331,7 @@ if __name__ == '__main__':
 
             new_scene.addPlane(position, normal, color, ka, kd, ks, phongN, kr, kt, refN)
         else:
+            texture = "texturas/metal.jpg"
             normal_x = float(inputs[index])
             index +=1
             normal_y = float(inputs[index])
@@ -340,7 +341,7 @@ if __name__ == '__main__':
 
             normal = normalized([normal_x * xyz_coord[0], normal_y * xyz_coord[1], normal_z * xyz_coord[2]])
 
-            new_scene.addPiso(position, normal, color, ka, kd, ks, phongN, kr, kt, refN)
+            new_scene.addPiso(position, normal, color, ka, kd, ks, phongN, kr, kt, refN, texture)
 
 
     cAmb_r = int(inputs[index])
