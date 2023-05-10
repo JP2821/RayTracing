@@ -44,7 +44,7 @@ Utilize o arquivo main.py e escolha uma entrada ou faça a sua e coloque no arqu
 # Para aplicara textura
 para texturas diferentes precisamos de nossa variavel texture_scale e para cada imagem é um valor diferente
 
-piso de madeira / self.texture_scale = 0.01
-terra (o planeta) / self.texture_scale = 1
-metal / self.texture_scale = 0.05
+piso de madeira / self.texture_scale = 0.01</br>
+terra (o planeta) / self.texture_scale = 1</br>
+metal / self.texture_scale = 0.05</br>
 
