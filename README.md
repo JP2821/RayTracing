@@ -22,21 +22,21 @@ Dentro dessa pasta existem vários arquivos de input com variações de nossas c
 Nos inputs de 4 a 6 variamos a posição das esferas.
 
 ## Explicando como funciona o aquivo de entrada
-*primeira linha: contem a dimensão da imagem a maioria dos arquivos é 480 X 640, lembrando que a primeira é y e a segunda x.</br>
-*segunda linha: Define o tamanho do pixel e a distância focal da câmera.</br>
-*terceira linha: Define a posição da câmera no espaço tridimensional (x, y, z).</br>
-*quarta linha: Define a direção para a qual a câmera está apontando (vetor de olhar).</br>
-*quinta linha: Define a orientação "para cima" da câmera.</br>
-*sexta linha: Define a distância da câmera ao plano de imagem.</br>
-*setima linha: Define o número de luzes na cena.</br>
+*primeira linha*: contem a dimensão da imagem a maioria dos arquivos é 480 X 640, lembrando que a primeira é y e a segunda x.</br>
+*segunda linha*: Define o tamanho do pixel e a distância focal da câmera.</br>
+*terceira linha*: Define a posição da câmera no espaço tridimensional (x, y, z).</br>
+*quarta linha*: Define a direção para a qual a câmera está apontando (vetor de olhar).</br>
+*quinta linha*: Define a orientação "para cima" da câmera.</br>
+*sexta linha*: Define a distância da câmera ao plano de imagem.</br>
+*setima linha*: Define o número de luzes na cena.</br>
 *oitava linha*: Define o número de objetos na cena.</br>
-*nona linha: Define a primeira esfera na cena. Os valores são: posição x, posição y, posição z, coeficiente de reflexão ambiente (ka), coeficiente de reflexão difusa (kd), coeficiente de reflexão especular (ks), expoente especular (phongN), coeficiente de reflexão especular transparente (kr), coeficiente de transmissão transparente (kt), índice de refração (refN), operador de transformação (rot/scale/translate), valor 1, valor 2, valor 3.</br>
-*decima linha: Define a segunda esfera na cena. A sintaxe é a mesma que na linha anterior.</br>
-*decima primeira linha: Define um objeto retangular na cena. Os valores são: cor vermelha, verde e azul (RGB), coeficiente de reflexão ambiente (ka), coeficiente de reflexão difusa (kd), coeficiente de reflexão especular (ks), expoente especular (phongN), coeficiente de reflexão especular transparente (kr), coeficiente de transmissão transparente (kt), índice de refração (refN), operador de transformação (rot/scale/translate), valor 1, valor 2, valor 3, valor 4, valor 5, valor 6.</br>
-*decima segunda linha: Define a cor de fundo da cena (RGB).</br>
-*decima terceira linha: Numero de luzes na cenas.</br>
-*decima quarta linha: especificam a posição e cor Cada linha tem 6 valores: o primeiro é a intensidade vermelha da luz, o segundo é a intensidade verde, o terceiro é a intensidade azul, o quarto é a posição da luz no eixo x, o quinto é a posição da luz no eixo y e o sexto é a posição da luz no eixo z.</br>
-*decima quinta e sexta: mesma sintaxe.</br>
+*nona linha*: Define a primeira esfera na cena. Os valores são: posição x, posição y, posição z, coeficiente de reflexão ambiente (ka), coeficiente de reflexão difusa (kd), coeficiente de reflexão especular (ks), expoente especular (phongN), coeficiente de reflexão especular transparente (kr), coeficiente de transmissão transparente (kt), índice de refração (refN), operador de transformação (rot/scale/translate), valor 1, valor 2, valor 3.</br>
+*decima linha*: Define a segunda esfera na cena. A sintaxe é a mesma que na linha anterior.</br>
+*decima primeira linha*: Define um objeto retangular na cena. Os valores são: cor vermelha, verde e azul (RGB), coeficiente de reflexão ambiente (ka), coeficiente de reflexão difusa (kd), coeficiente de reflexão especular (ks), expoente especular (phongN), coeficiente de reflexão especular transparente (kr), coeficiente de transmissão transparente (kt), índice de refração (refN), operador de transformação (rot/scale/translate), valor 1, valor 2, valor 3, valor 4, valor 5, valor 6.</br>
+*decima segunda linha*: Define a cor de fundo da cena (RGB).</br>
+*decima terceira linha*: Numero de luzes na cenas.</br>
+*decima quarta linha*: especificam a posição e cor Cada linha tem 6 valores: o primeiro é a intensidade vermelha da luz, o segundo é a intensidade verde, o terceiro é a intensidade azul, o quarto é a posição da luz no eixo x, o quinto é a posição da luz no eixo y e o sexto é a posição da luz no eixo z.</br>
+*decima quinta e sexta*: mesma sintaxe.</br>
 
 # Para rodar
 Utilize o arquivo main.py e escolha uma entrada ou faça a sua e coloque no arquivo input, divirta-se!!
